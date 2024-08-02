@@ -1,0 +1,149 @@
+[
+  {
+    "url": "pancakes",
+    "name": "Pancakes",
+    "image": "https://www.marthastewart.com/thmb/Vgb9cQSlegZz5fcoSbkkqyHPmHY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/338185-basic-pancakes-09-00b18f8418fd4e52bb2050173d083d04.jpg",
+    "ingredients": ["flour", "milk", "egg", "sugar", "butter"],
+    "instructions": [
+      "Mix flour, milk, egg, sugar, and melted butter in a bowl.",
+      "Heat a pan over medium heat and lightly grease it with butter.",
+      "Pour batter into the pan and cook until bubbles form on the surface.",
+      "Flip and cook until golden brown on the other side.",
+      "Serve with maple syrup or your favorite toppings."
+    ]
+  },
+  {
+    "url": "caesar-salad",
+    "name": "Caesar Salad",
+    "image": "https://s23209.pcdn.co/wp-content/uploads/2023/01/220905_DD_Chx-Caesar-Salad_051.jpg",
+    "ingredients": ["romaine lettuce", "parmesan cheese", "croutons", "Caesar dressing"],
+    "instructions": [
+      "Chop romaine lettuce and place in a large bowl.",
+      "Add grated parmesan cheese and croutons.",
+      "Pour Caesar dressing over the salad and toss to combine.",
+      "Serve immediately."
+    ]
+  },
+  {
+    "url": "spaghetti-bolognese",
+    "name": "Spaghetti Bolognese",
+    "image": "https://kep.cdn.indexvas.hu/1/0/1857/18576/185761/18576197_91d66836f8ae3f34f89ef57ab92f2b9e_wm.jpg",
+    "ingredients": ["spaghetti", "ground beef", "onion", "garlic", "tomato sauce", "olive oil", "salt", "pepper"],
+    "instructions": [
+      "Cook spaghetti according to package instructions.",
+      "In a separate pan, heat olive oil and sauté chopped onion and garlic.",
+      "Add ground beef and cook until browned.",
+      "Stir in tomato sauce and season with salt and pepper.",
+      "Simmer for 15 minutes, then serve over the cooked spaghetti."
+    ]
+  },
+  {
+    "url": "chicken-curry",
+    "name": "Chicken Curry",
+    "image": "https://hips.hearstapps.com/hmg-prod/images/chicken-curry-index-65a1629f3c1e7.jpg?crop=0.8885082084225553xw:1xh;center,top&resize=1200:*",
+    "ingredients": ["chicken breasts", "onion", "garlic", "curry powder", "coconut milk", "salt", "pepper"],
+    "instructions": [
+      "Sauté chopped onion and garlic in a pan with a bit of oil.",
+      "Add diced chicken breasts and cook until browned.",
+      "Stir in curry powder and cook for another minute.",
+      "Add coconut milk and simmer until chicken is cooked through.",
+      "Season with salt and pepper, and serve with rice."
+    ]
+  },
+  {
+    "url": "vegetable-stir-fry",
+    "name": "Vegetable Stir-Fry",
+    "image": "https://www.allrecipes.com/thmb/MF7yU1MBbRlaT40ogVr-1PgggKc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/222658-frozen-vegetable-stir-fry-4x3-1382-583b53fa0bcd4247920611ad431c14cb.jpg",
+    "ingredients": ["broccoli", "bell pepper", "carrot", "soy sauce", "ginger", "garlic", "olive oil"],
+    "instructions": [
+      "Heat olive oil in a pan or wok over high heat.",
+      "Add sliced vegetables and stir-fry for a few minutes until tender-crisp.",
+      "Add minced garlic and ginger and stir-fry for another minute.",
+      "Add soy sauce and toss to coat the vegetables.",
+      "Serve over rice or noodles."
+    ]
+  },
+  {
+    "url": "chocolate-chip-cookies",
+    "name": "Chocolate Chip Cookies",
+    "image": "https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/62298.jpg",
+    "ingredients": ["flour", "butter", "sugar", "brown sugar", "eggs", "chocolate chips", "vanilla extract", "baking soda", "salt"],
+    "instructions": [
+      "Preheat oven to 350°F (175°C).",
+      "Cream together butter, sugar, and brown sugar until smooth.",
+      "Beat in eggs one at a time, then stir in vanilla extract.",
+      "Combine flour, baking soda, and salt; gradually mix into the butter mixture.",
+      "Fold in chocolate chips.",
+      "Drop rounded tablespoons of dough onto a baking sheet.",
+      "Bake for 10-12 minutes or until golden brown."
+    ]
+  },
+  {
+    "url": "beef-tacos",
+    "name": "Beef Tacos",
+    "image": "https://www.twopeasandtheirpod.com/wp-content/uploads/2022/12/Beef-Tacos-55.jpg",
+    "ingredients": ["ground beef", "taco seasoning", "taco shells", "lettuce", "tomato", "cheese", "sour cream"],
+    "instructions": [
+      "Cook ground beef in a skillet over medium heat until browned.",
+      "Drain excess fat and add taco seasoning to the beef.",
+      "Cook according to seasoning package instructions.",
+      "Fill taco shells with seasoned beef.",
+      "Top with shredded lettuce, diced tomato, cheese, and sour cream."
+    ]
+  },
+  {
+    "url": "margarita-pizza",
+    "name": "Margarita Pizza",
+    "image": "https://cdn.loveandlemons.com/wp-content/uploads/2023/07/margherita-pizza.jpg",
+    "ingredients": ["pizza dough", "tomato sauce", "mozzarella cheese", "fresh basil", "olive oil", "salt"],
+    "instructions": [
+      "Preheat oven to 475°F (245°C).",
+      "Roll out pizza dough on a floured surface and transfer to a baking sheet or pizza stone.",
+      "Spread tomato sauce over the dough, leaving a border around the edges.",
+      "Sprinkle mozzarella cheese evenly over the sauce.",
+      "Bake for 10-12 minutes or until crust is golden and cheese is melted and bubbly.",
+      "Top with fresh basil leaves and a drizzle of olive oil before serving."
+    ]
+  },
+  {
+    "url": "greek-salad",
+    "name": "Greek Salad",
+    "image": "https://hips.hearstapps.com/hmg-prod/images/greek-salad-index-642f292397bbf.jpg?crop=0.6666666666666667xw:1xh;center,top&resize=1200:*",
+    "ingredients": ["cucumber", "tomato", "red onion", "kalamata olives", "feta cheese", "olive oil", "lemon juice", "oregano", "salt", "pepper"],
+    "instructions": [
+      "Chop cucumber, tomato, and red onion and place in a bowl.",
+      "Add kalamata olives and crumbled feta cheese.",
+      "In a small bowl, whisk together olive oil, lemon juice, oregano, salt, and pepper.",
+      "Pour dressing over salad and toss gently to combine.",
+      "Serve immediately or refrigerate until ready to serve."
+    ]
+  },
+  {
+    "url": "lentil-soup",
+    "name": "Lentil Soup",
+    "image": "https://www.allrecipes.com/thmb/UeFtapHyGFBo4Lx-72GxgjrOGnk=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/13978-lentil-soup-DDMFS-4x3-edfa47fc6b234e6b8add24d44c036d43.jpg",
+    "ingredients": ["lentils", "carrot", "celery", "onion", "garlic", "tomato paste", "vegetable broth", "cumin", "salt", "pepper"],
+    "instructions": [
+      "Sauté chopped onion, carrot, and celery in a pot with a bit of oil until softened.",
+      "Add minced garlic and cook for another minute.",
+      "Stir in tomato paste and cook for 2 minutes.",
+      "Add lentils, vegetable broth, cumin, salt, and pepper.",
+      "Bring to a boil, then reduce heat and simmer for 30-40 minutes or until lentils are tender.",
+      "Serve hot."
+    ]
+  },
+  {
+    "url": "apple-pie",
+    "name": "Apple Pie",
+    "image": "https://www.southernliving.com/thmb/bbDY1d_ySIrCFcq8WNBkR-3x6pU=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/2589601_Mailb_Mailbox_Apple_Pie_003-da802ff7a8984b2fa9aa0535997ab246.jpg",
+    "ingredients": ["pie crust", "apples", "sugar", "cinnamon", "nutmeg", "butter", "flour"],
+    "instructions": [
+      "Preheat oven to 425°F (220°C).",
+      "Peel, core, and slice apples, then toss with sugar, cinnamon, nutmeg, and a bit of flour.",
+      "Place the mixture into the pie crust.",
+      "Dot with butter and cover with a second pie crust or lattice top.",
+      "Bake for 45-50 minutes or until crust is golden and filling is bubbly.",
+      "Cool before serving."
+    ]
+  }
+]

@@ -20,9 +20,25 @@ $user = $recipe->user;
                 </div>
             @else
                 <div class="flex justify-end mb-4">
-                    <a href="{{ route('recipes.rate', $recipe->id) }}" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300 focus:outline-none focus:shadow-outline">
+                    <a href="{{ route('recipes.rate', $recipe->id) }}" class="mr-5 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300 focus:outline-none focus:shadow-outline">
                         Rate this recipe
                     </a>
+                    @if ($bookmarked)
+                        <form action="{{ route('bookmarks.destroy', $recipe->id) }}" method="POST">
+                            @csrf
+                            @method('DELETE')
+                            <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300 focus:outline-none focus:shadow-outline">
+                                Remove Bookmark
+                            </button>
+                        </form>
+                    @else
+                        <form action="{{ route('bookmarks.store', $recipe->id) }}" method="POST">
+                            @csrf
+                            <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300 focus:outline-none focus:shadow-outline">
+                                Bookmark
+                            </button>
+                        </form>
+                    @endif
                 </div>
             @endif
         @endif
@@ -46,7 +62,7 @@ $user = $recipe->user;
 
         <div class="my-8">
             <h3 class="text-2xl font-semibold mb-3 text-gray-800">Rating:</h3>
-            @if ($rating === null)
+            @if ($rating == 0)
                 <p class="text-gray-600">Be the first to rate this recipe!</p>
             @else
                 <div class="flex items-center justify-center">

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Categories;
 use App\Models\Recipe;
+use App\Models\Bookmark;
 
 use Illuminate\Contracts\View\View;
 use Illuminate\Http\RedirectResponse;
@@ -20,7 +21,15 @@ class RecipesController extends Controller
     public function show($id): View
     {
         $recipe = Recipe::findOrFail($id);
-        return view('recipes.show', ['recipe' => $recipe]);
+
+        $bookmarked = Bookmark::where('user_id', auth()->user()->id)
+            ->where('recipe_id', $recipe->id)
+            ->exists();
+
+        return view('recipes.show', [
+            'recipe' => $recipe,
+            'bookmarked'=> $bookmarked
+        ]);
     }
 
     public function create(): View
@@ -145,7 +154,6 @@ class RecipesController extends Controller
         ]);
 
         auth()->user()->ratings()->create($data);
-        
 
         return redirect()->route('recipes.show', $id);
     }

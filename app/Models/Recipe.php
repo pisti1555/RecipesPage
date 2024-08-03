@@ -21,16 +21,10 @@ class Recipe extends Model
     ];
 
     public function getRating() {
-        if ($this->ratings->count() == 0) return null;
-        $sum = 0;
+        if ($this->ratings->count() == 0) return 0;
 
-        foreach ($this->ratings as $rating) {
-            $sum += $rating->rating;
-        }
-
-        $rating = round($sum / $this->ratings->count());
-
-        return $rating;
+        $rating = $this->ratings()->avg('rating');
+        return round($rating);
     }
 
     public function user()
@@ -42,4 +36,10 @@ class Recipe extends Model
     {
         return $this->hasMany(Rating::class);
     }
+
+    public function bookmarks()
+    {
+        return $this->hasMany(Bookmark::class);
+    }
+
 }

@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\RecipesController;
+use App\Http\Controllers\BookmarkController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/welcome', function() {
@@ -26,11 +27,16 @@ Route::middleware('auth')->group(function () {
 
     Route::post('/recipes', [RecipesController::class, 'store'])->name('recipes.store');
     Route::get('/recipes/create', [RecipesController::class, 'create'])->name('recipes.create');
+    Route::post('/recipes/save/{id}', [RecipesController::class, 'save'])->name('recipes.save');
     Route::patch('/recipes/{id}', [RecipesController::class,'update'])->name('recipes.update');
     Route::delete('/recipes/{id}', [RecipesController::class, 'destroy'])->name('recipes.destroy');
     Route::get('/recipes/{id}/edit', [RecipesController::class,'edit'])->name('recipes.edit');
     Route::get('/recipes/{id}/rate', [RecipesController::class,'rate'])->name('recipes.rate');
     Route::patch('/recipes/{id}/rate', [RecipesController::class,'rate_update'])->name('recipes.rate.update');
+
+    Route::get('/bookmark', [BookmarkController::class,'index'])->name('bookmarks.index');
+    Route::post('/bookmark/{id}', [BookmarkController::class, 'store'])->name('bookmarks.store');
+    Route::delete('/bookmark/{id}', [BookmarkController::class, 'destroy'])->name('bookmarks.destroy');
 });
 
 Route::get('/profile/{user}', [ProfileController::class, 'show'])->name('profile.show');

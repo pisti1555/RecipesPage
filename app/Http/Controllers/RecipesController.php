@@ -5,16 +5,16 @@ namespace App\Http\Controllers;
 use App\Models\Categories;
 use App\Models\Recipe;
 use App\Models\Bookmark;
-
+use App\Models\Search;
 use Illuminate\Contracts\View\View;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 
 class RecipesController extends Controller
 {
-    public function index(): View
+    public function index(Request $request): View
     {
-        $recipes = Recipe::latest()->get();
+        $recipes = Search::listRecipes($request);
         return view('recipes.index', ['recipes' => $recipes]);
     }
 
@@ -22,13 +22,20 @@ class RecipesController extends Controller
     {
         $recipe = Recipe::findOrFail($id);
 
-        $bookmarked = Bookmark::where('user_id', auth()->user()->id)
-            ->where('recipe_id', $recipe->id)
-            ->exists();
+        if (auth()->user()) {
+            $bookmarked = Bookmark::where('user_id', auth()->user()->id)
+                ->where('recipe_id', $recipe->id)
+                ->exists();
+
+            return view('recipes.show', [
+                'recipe' => $recipe,
+                'bookmarked'=> $bookmarked
+            ]);
+        }
 
         return view('recipes.show', [
             'recipe' => $recipe,
-            'bookmarked'=> $bookmarked
+            'bookmarked'=> false
         ]);
     }
 

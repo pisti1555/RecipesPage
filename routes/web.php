@@ -33,6 +33,7 @@ Route::middleware('auth')->group(function () {
     Route::get('/recipes/{id}/edit', [RecipesController::class,'edit'])->name('recipes.edit');
     Route::get('/recipes/{id}/rate', [RecipesController::class,'rate'])->name('recipes.rate');
     Route::patch('/recipes/{id}/rate', [RecipesController::class,'rate_update'])->name('recipes.rate.update');
+    Route::get('/recipes/get', [RecipesController::class, 'getRecipes'])->name('recipes.get');
 
     Route::get('/bookmark', [BookmarkController::class,'index'])->name('bookmarks.index');
     Route::post('/bookmark/{id}', [BookmarkController::class, 'store'])->name('bookmarks.store');
